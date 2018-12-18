@@ -2,7 +2,7 @@
   "name": "tavex-poller",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "lib/get.js",
   "scripts": {
     "start": "nohup ./run.sh > run.log 2>&1 &",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,12 +10,14 @@
   "author": "Raido Kalbre <raido@kalbre.eu> (http://raido.kalbre.eu)",
   "license": "MIT",
   "dependencies": {
+    "bluebird": "^3.5.3",
     "cheerio": "^0.22.0",
-    "request": "^2.78.0"
+    "minimist": "^1.2.0",
+    "request": "^2.78.0",
+    "request-promise": "^4.2.2"
   },
   "repository": {
-    { "type" : "git"
-    , "url" : "https://github.com/Raidok/tavex-poller.git"
-    }
+    "type": "git",
+    "url": "https://github.com/Raidok/tavex-poller.git"
   }
 }
